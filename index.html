@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: #fffffff5; /* Set the background to black */
+        color: #000; /* Set the text color to black */
+      }
+      .details-container {
+        height: 500px; /* Set the desired height */
+        width: 300px;
+     }
+     .experience-sub-title.project-title {
+      font-size: 18px; /* Set the desired font size for all elements with this class */
+     }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Manisha Kaila</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> Manisha Kaila</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#tools" onclick="toggleMenu()">Tools</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile"> 
+      <div class="section__pic-container">
+        <img src="./assets/profile_pic.png" alt=" Manisha Kaila profile picture" > 
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello World!!!, I'm</p>
+        <h1 class="title">Manisha Kaila</h1>
+        <p class="section__text__p2" style="font-size: 18px;"> Empowering Businesses with data -  one insight at a time</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/manishakaila/' "
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href= 'https://github.com/kailamanisha' "
+          />
+          <img
+          src="./assets/tableau.png"
+          alt="My Tableau Public profile"
+          class="icon"
+          onclick="location.href='https://public.tableau.com/app/profile/manisha.kaila/vizzes' "
+        />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
+        <div class="section__pic-container">
+          <img src="./assets/side.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div style="flex: 1;">
+          <div class="about-containers" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="details-container" style="height: 150px; flex: 0 0 calc(50% - 20px); box-sizing: border-box;">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>Data Analyst : 3 years</p>
+            </div>
+            <div class="details-container" style="height: 150px; flex: 0 0 calc(50% - 20px); box-sizing: border-box;">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Engg Computer Science<br />M.S  Data Analytics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an energetic individual with a flair for solving real-world challenges and innovating solutions. My passion for bouldering reflects my love for problem-solving. As an extroverted learner, I thrive in dynamic discussions, offering valuable insights. Fascinated by storytelling and data, I’m constantly exploring new perspectives and understanding intricate details, eager to contribute and evolve continuously.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+              MG Cloud Technologies LLC .
+              <span style="float: right; font-size: 14px;"> August 2023 - Present</span>
+            </h2>            
+              <p style="text-align: left;"> <strong> Business Intelligence Analyst</strong>  
+              
+              <ul style="text-align: left;font-size:12px;">
+                <li>	
+                  Collaborated with business stakeholders to understand requirements and utilized SQL and Python to assess existing reports, data sources, and
+                  business processes, identifying improvement opportunities and strategies to enhance current capabilities
+		</li>
+<li> 
+	Assisted in the creation and maintenance of Tableau dashboards and reports, incorporating dynamic features such as interactive filters and drill-
+down functionalities to provide insightful analysis and support management decision-making.
+</li>
+<li>
+	Contributed to data governance processes by validating and auditing data sources, ensuring data integrity, and minimizing business risk, while
+actively participating in troubleshooting data sources and addressing inquiries to maintain report accuracy and reliability.
+</li>
+              </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+              Whitehat Technologies Education Pvt Ltd.
+              <span style="float: right; font-size: 14px;">August 2020 - May 2021</span>
+                </h2> 
+            <p style="text-align: left;"> <strong> Analyst: Business Operations</strong>  
+              <ul style="text-align: left;font-size:12px;">
+                <li>	
+                  Coordinated a team of 12 members to successfully conduct text mining and sentiment analysis on various communication channels such as Email,
+                  Calls, and Chats using Python, which increased team satisfaction to above 90%.		</li>
+<li>	
+  Utilized Python libraries to design and deploy pre-established thresholds for sentiment alerts, leading to a 75% decrease in missed opportunities to
+  address customer concerns and improve overall customer satisfaction.</li>
+<li>	
+  Developed comprehensive reports using Tableau and Excel to showcase sentiment analysis results, identifying recurring issues, and recommending
+  areas for improvement. Increased individual customer satisfaction to over 95%.
+</li>
+
+             </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+            Shivam Electricals Pvt Ltd. <br>
+            <span style="float: right; font-size: 14px;"> June 2018 - July 2020  </span>
+            </h2> 
+            <p style="text-align: left;"> <strong> Sales and Budget Analyst </strong>  
+             <ul style="text-align: left;font-size:12px;">
+              <li>	
+                Established and reinforced advanced ETL data pipelines utilizing Python and Tableau, generating real-time operational KPIs and financial insights
+                for sales and budgeting purposes, enhancing decision-making capabilities by 40%. </li>
+<li>	
+  Constructed interactive Tableau dashboards that granted leadership teams across the organization self-service tools, enabling on-demand sales
+  analytics and empowering data-driven decision-making processes, leading to a 60% increase in overall sales productivity.</li>
+<li>	
+  Conducted rigorous statistical analysis on various sales factors to identify key relationships, contributing to formulating effective business strategies
+  that resulted in a 35% improvement in customer retention rates.
+</li>
+</p>
+</div>
+</ul>
+<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Capstone Experience'" />
+    </section>
+    <section id=" Capston Experience">
+      <h1 class="title"> Capstone Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+             Urban Value Corner Stores.
+              <span style="float: right; font-size: 14px;"> January 2023 - April 2023</span>
+            </h2>            
+              <p style="text-align: left;"> <strong> Market Basket Analysis</strong>  
+              
+              <ul style="text-align: left;font-size:12px;">
+                <li>	
+                  Engineered and implemented advanced predictive models using Python and its libraries, achieving an impressive 93.6% accuracy rate in trend
+forecasting and risk identification.
+		</li>
+<li> 
+	Generated interactive dashboards and reports using Power BI to monitor key performance indicators, resulting in a 52% increase in data visibility
+and actionable insights for decision-making.
+</li>
+<li>
+  Created a scalable data warehouse utilizing SQL to efficiently store and organize large volumes of data, enabling seamless ETL processes and reducing
+  data retrieval time by 60%.
+</li>
+              </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+             Gold Spring Consulting.
+              <span style="float: right; font-size: 14px;">September 2022 - December 2022</span>
+                </h2> 
+            <p style="text-align: left;"> <strong> Spend Analysis</strong>  
+              <ul style="text-align: left;font-size:12px;">
+                <li>	
+                  Conducted a seamless SQL-driven merging of intricate datasets from multiple airlines, creating a streamlined data analysis workflow that showcases
+unwavering commitment to operational efficiency and data excellence	</li>
+<li>	
+  Identified and presented cost-saving opportunities through meticulous data examination using R and SQL, leading to a 35% reduction in overall
+  expenses for US airlines on domestic and international routes.</li>
+<li>	
+  Developed a user-friendly Tableau dashboard for panoramic data visualizations through seamless dataset integration, facilitating informed strategic
+  decision-making on expenditure insights.</li>
+</ul>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#tools'"
+      />
+    </section>
+    <section id="tools">
+      <h1 class="title">Tools</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages/<br>Visualization</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Python:</strong> Experienced</li>
+                <li><strong>R:</strong> Intermediate</li>
+                <li><strong>SQL:</strong> Experienced</li>
+                <li><strong>HTML:</strong> Intermediate</li>
+                <li><strong>Tableau:</strong> Experienced</li>
+                <li><strong>PowerBi:</strong> Experienced</li>
+                <li><strong> Looker:</strong>Intermediate</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">Libraries</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Scikit-Learn:</strong> Intermediate</li>
+                <li><strong>OpenCV:</strong> Intermediate</li>
+                <li><strong>Pandas:</strong> Experienced</li>
+                <li><strong>Numpy:</strong> Experienced</li>
+                <li><strong>XGBoost:</strong> Intermediate</li>
+                <li><strong>Plotply:</strong> Intermediate</li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning Algorithms</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Regression:</strong> Experienced</li>
+                <li><strong>Classification:</strong> Experienced</li>
+                <li><strong>Clustering:</strong> Experienced</li>
+                <li><strong>Decision trees:</strong> Experienced</li>
+                <li><strong>Random Forest:</strong> Experienced</li>
+                <li><strong>K- Means:</strong> Experienced</li>
+                <li><strong>NLP:</strong> Experienced</li>
+                <li><strong>KNN:</strong> Experienced</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Domain</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Deep Learning</strong> </li>
+                <li><strong>Sentiment Analysis</strong> </li>
+                <li><strong>Reinforcement Learning</strong> </li>
+                <li><strong>Data Visualization</strong> </li>
+                <li><strong>Data Analysis</strong> </li>
+                <li><strong>A/B Testing</strong> </li>
+                <li><strong>Project Management</strong> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div style="overflow: auto; max-height: 700px; margin: 0 auto;">
+
+          <table>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-1.png"
+                      alt="Stereo Vision"
+                      class="project-img"
+                    />
+                  </div>
+                  <h3 class="experience-sub-title project-title">Income Prediction</h3>
+                  <p class="project-description" style="color: white;">Performed detailed analysis on a dataset with 34K records, rectifying missing values for data quality. Enhanced model accuracy by balancing the dataset and implementing various algorithms, with neural networks achieving the top accuracy of 83%.</p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/kailamanisha/ML-Project'"
+                    >
+                      Github
+                    </button>
+      
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Walmart Sales Analysis using SQL"
+                class="project-img"
+                style="height: 200px;"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Walmart Sales Analysis using SQL</h2>
+            <p class="project-description" style="color: white;">This project aims to examine Walmart's sales data to identify high-performing branches and products, understand sales trends, and analyze consumer behavior, with the goal of improving sales strategies.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/kailamanisha/SQL-Projects'"
+              > 
+                Github
+              </button>
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #516942;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Road Accident Dashboard"
+                      class="project-img"
+                      style="height: 200px;"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Road Accident Dashboard Tableau</h2>
+                  <p class="project-description" style="color: white;">The project analyzes UK road accidents between 2019-2022, detailing total incidents, casualties, vehicle types, and categorizing them by location and weather, including annual trend percentages. </p>
+                  <div class="btn-container">
+                    <br>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://public.tableau.com/app/profile/manisha.kaila/viz/RoadAccidentDashboard2019-2022UnitedKingdom/Dashboard1'"
+                    > 
+                      Tableau Dashboard
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+  </div>
+      <img src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kaila.m@northeastern.edu">kaila.m@northeastern.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/manishakaila/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Manisha Kaila. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
