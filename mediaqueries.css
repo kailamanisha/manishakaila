@@ -48,56 +48,122 @@
 }
 
 @media screen and (max-width: 600px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+
+  #profile,
   #contact,
-  footer {
-    height: 40vh;
+  #projects,
+  footer,
+  section {
+    height: auto; /* Allows the content to determine the height */
+    padding: 1rem; /* Adds some space around the content */
+    margin-bottom: 1rem; /* Adds space between sections */
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+
+  .section-container,
+  .experience-details-container,
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    width: 100%; /* Ensures the container takes the full width */
+    padding: 0 1rem; /* Adds padding inside the containers */
+    box-sizing: border-box; /* Includes padding in the width */
+    flex-direction: column; /* Stacks children elements vertically */
+    align-items: center; /* Centers children elements horizontally */
   }
-  .contact-info-container {
-    margin: 0;
+
+  .section__pic-container,
+  .contact-info-container,
+  .details-container {
+    width: auto; /* Allows the container to resize with its content */
+    margin-bottom: 1rem; /* Adds space below each container */
   }
+
+  .nav-links,
+  .menu-links {
+    display: block; /* Stacks the navigation links vertically */
+  }
+
+  .nav-links li,
+  .menu-links li {
+    width: 100%; /* Each navigation link takes the full container width */
+    text-align: center; /* Centers the text */
+  }
+
+  .nav-links a,
+  .menu-links a {
+    display: block; /* Makes the link fill its list item for easier tapping */
+    padding: 0.75rem 0; /* Adds vertical padding for touch friendliness */
+    margin: 0.5rem 0; /* Adds space between navigation links */
+  }
+
+  .section__text__p2,
+  .experience-sub-title,
+  .title,
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjusts the font size for better readability */
   }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
+
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Increases the logo size */
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+
+  .arrow {
+    width: 30px; /* Shrinks the arrow size */
+    height: 30px; /* Maintains the aspect ratio */
   }
+
+  /* Adjusts images to not exceed the container's width */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hides unnecessary elements that may clutter the mobile interface */
+  .arrow,
+  .hamburger-icon span {
+    display: none;
+  }
+
+  /* Ensure buttons are not too small */
+  .btn {
+    padding: 0.5rem 1rem; /* Increases padding */
+    font-size: 1rem; /* Ensures text is large enough */
+    margin: 0.25rem; /* Adds some margin around buttons */
+  }
+}
+
+
+/* Tablets in portrait orientation */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+    width: 50vw; /* Scales the image container on tablet sizes */
+    height: auto; /* Keeps the aspect ratio of the container */
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+  
+  .details-container {
+    width: 45%; /* Makes better use of space on tablets */
+    margin: 0 2.5%; /* Adds some spacing around the containers */
   }
-  .title {
-    font-size: 2rem;
+
+  .title, .experience-sub-title, .section__text__p2 {
+    font-size: larger; /* Increases font size for readability */
   }
-  .text-container {
-    text-align: justify;
+
+  /* Adjust navigation for tablets */
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
   }
+
+  .logo {
+    font-size: larger; /* Increase logo size for visibility */
+  }
+
+  /* Other tablet-specific styles */
 }
